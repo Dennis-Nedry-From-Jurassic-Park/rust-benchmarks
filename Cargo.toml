@@ -1,0 +1,55 @@
+[package]
+name = "rust-benchmarks"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+opt-level = 0
+overflow-checks = false
+debug = 0
+codegen-units = 2
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7.3"
+num-primes = "0.2.0"
+primal = "0.2"
+
+slab = "0.4"
+sharded-slab = "0.1.1"
+
+#bumpalo = { version = "3.4.0", features = ["allocator_api", "collections"] }
+
+derive_builder = "0.10.2"
+typed-builder = "0.9.1"
+
+nested = "0.1.1"
+
+tinyvec = { version = "1.5.0", features = ["alloc"] }
+
+smallvec = "1.6.1"
+
+dashmap = "4.0.2"
+chashmap = "2.2.2"
+sharded = "0.1.0"
+contrie = "0.1.4"
+crossbeam-utils = "0.6.1"
+easy-parallel = "3.1.0"
+
+[features]
+profile-with-puffin = ["profiling/profile-with-puffin"]
+
+[dev-dependencies]
+profiling = "1.0.4"
+puffin = "0.2.0"
+
+criterion = "0.3"
+glassbench = "0.3"
+
+tinyvec = "1.5.0"
+num-primes = "0.2.0"
+
+[[bench]]
+name = "smallvec-vs-tinyvec_glassbench"
+harness = false
