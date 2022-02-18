@@ -10,3 +10,4 @@ Cargo.lock
 **/*.rs.bk
 # for glass bech results
 *.db
+/.idea/
