@@ -10,4 +10,10 @@ Cargo.lock
 **/*.rs.bk
 # for glass bech results
 *.db
-/.idea/
+
+/.idea/.gitignore
+/.idea/sonarlint/issuestore/index.pb
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/rust-benchmarks.iml
+/.idea/vcs.xml
