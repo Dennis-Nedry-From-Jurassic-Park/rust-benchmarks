@@ -1,5 +1,8 @@
 benchmark flat structs results:
 
+opt-level = 0
+codegen-units = 2
+
 1) 50 iterations over 1 mln inserts in each
 
 | # |   task   | iterations | total duration | mean duration |
