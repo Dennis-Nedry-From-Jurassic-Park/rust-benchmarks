@@ -11,9 +11,4 @@ Cargo.lock
 # for glass bech results
 *.db
 
-/.idea/.gitignore
-/.idea/sonarlint/issuestore/index.pb
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/rust-benchmarks.iml
-/.idea/vcs.xml
+/.idea/
