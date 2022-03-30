@@ -18,6 +18,8 @@ rand = "0.7.3"
 num-primes = "0.2.0"
 primal = "0.2"
 
+nanoid = "0.4.0"
+
 slab = "0.4"
 sharded-slab = "0.1.1"
 
@@ -46,12 +48,13 @@ profile-with-puffin = ["profiling/profile-with-puffin"]
 profiling = "1.0.4"
 puffin = "0.2.0"
 
-criterion = "0.3"
+bencher = "0.1.5"
+criterion = "0.3.5"
 glassbench = "0.3"
 
 tinyvec = "1.5.0"
 num-primes = "0.2.0"
 
 [[bench]]
-name = "smallvec-vs-tinyvec-vs-arrayvec-glassbench"
+name = "nanoid_vs_own"
 harness = false
